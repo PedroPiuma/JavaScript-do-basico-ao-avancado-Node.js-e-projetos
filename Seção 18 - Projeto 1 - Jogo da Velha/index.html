@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <span id="result" class="hidden">teste</span>
+    <header>
+        <h1>Jogo da Velha</h1>
+    </header>
+    <main class="main">
+        <div class="main-btns">
+            <button id="multiplayer">2 Jogadores</button>
+            <button id="singleplayer">Contra IA</button>
+        </div>
+
+        <table id="game" class="hidden">
+            <tr>
+                <td class="box rigth bottom"></td>
+                <td class="box"></td>
+                <td class="box left bottom"></td>
+            </tr>
+            <tr>
+                <td class="box"></td>
+                <td class="box top rigth bottom left"></td>
+                <td class="box"></td>
+            </tr>
+            <tr>
+                <td class="box top"></td>
+                <td class="box rigth left"></td>
+                <td class="box top"></td>
+            </tr>
+
+        </table>
+
+        <div id="scoreboard">
+            <p><img class="score" src="./icons-x.png" alt="">: <span id="scoreboard-x">0</span></p>
+            <p><img class="score" src="./icons-circle.png" alt="">: <span id="scoreboard-circle">0</span></p>
+        </div>
+
+    </main>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
